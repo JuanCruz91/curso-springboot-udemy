@@ -17,7 +17,7 @@ public class UserController {
     }
 
     //@GetMapping("/details")
-    // public String details (Map model) {
+    // public String details (Map <String, Object>model) {
 
     //     model.put("title", "Hola Mundo Spring Boot");
     //     model.put("name", "Juan");
