@@ -8,6 +8,16 @@ public class User {
     
 
 
+    public User() {
+    }
+
+
+    public User(String name, String lastname, String email) {
+        this(name, lastname);
+        this.email = email;
+    }
+
+
     public User(String name, String lastname) {
         this.name = name;
         this.lastname = lastname;
