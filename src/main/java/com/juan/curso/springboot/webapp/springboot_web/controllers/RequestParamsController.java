@@ -32,12 +32,13 @@ public class RequestParamsController {
         return params;
     }
 
+    //http://localhost:8080/api/params/request?code=13&message=HolaMundo
     @GetMapping("/request")
     public ParamMixDto request(HttpServletRequest request) {
 
         Integer code = 0;
         try {
-            Integer.parseInt(request.getParameter("code"));
+            code = Integer.parseInt(request.getParameter("code"));
         } catch (NumberFormatException e) {
         }
         ParamMixDto params = new ParamMixDto();
