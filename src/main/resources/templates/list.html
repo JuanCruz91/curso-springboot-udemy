@@ -8,7 +8,9 @@
 <body>
     <h1 th:text="${title}"></h1>
     <div th:if="${users.isEmpty()}" th:text="${'No tiene elementos usuarios'}"></div>
-    <table>
+    
+    <!--el If controla que se muestre la tabla solo si hay user para mostrar y sino solo el mensaje del div-->
+    <table th:if="${not users.isEmpty()}">
         <thead>
             <tr>
             <th>name</th>
